@@ -1,5 +1,5 @@
 # Python image to use.
-FROM python:3.12-alpine
+FROM python:3.12.8-slim-bullseye
 
 # Set the working directory to /app
 WORKDIR /app
@@ -15,3 +15,5 @@ COPY . .
 
 # Run app.py when the container launches
 ENTRYPOINT ["python", "main.py"]
+
+
